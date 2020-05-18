@@ -59,12 +59,13 @@ class _HomeState extends State<Home> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
+              Spacer(),
               Image(
                 image: AssetImage("assets/images/logo.png"),
                 width: 350,
               ),
               Spacer(),
-              //Image.asset("images/logo.png"),
+              Spacer(),
               Text(
                 _fraseGerada,
                 textAlign: TextAlign.justify,
@@ -74,6 +75,7 @@ class _HomeState extends State<Home> {
                     color: Colors.black
                 ),
               ),
+              Spacer(),
               Spacer(),
               RaisedButton(
                 child: Text(
@@ -87,7 +89,7 @@ class _HomeState extends State<Home> {
                 color: Colors.blue,
                 onPressed: _gerarFrase,
               ),
-
+              Spacer(),
             ],
           ),
         )
